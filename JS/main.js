@@ -12,7 +12,7 @@ async function getAPIData(url) {
     }
 }
 
-let tab=getAPIData("../books-1.json")
+let tab=getAPIData("books-1.json")
 console.log(tab)
 let i=1;
 $(document).ready(function(){
