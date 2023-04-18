@@ -12,11 +12,11 @@ async function getAPIData(url) {
     }
 }
 
-let tab=getAPIData("books-1.json")
+let tab=getAPIData("JS/books-1.json")
 console.log(tab)
 let i=1;
 $(document).ready(function(){
-    tab.then(book=>
+    tab.then((book)=>
         book.books.forEach(element => { 
             let div=$(`<div class="card">
             <div class="img-box" id=${i}>
